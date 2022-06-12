@@ -10,7 +10,7 @@ export default function CartEl(props){
   
   return(
     <div className='cartEl'> 
-      <div className='cartImg'></div>
+      <img className='cartImg' src = {`images/`+props.code+`.jfif`}></img>
       <div className="cartText">
         <div className='cartInfo'>
           <h2>{elementInfo[props.code].name}</h2>
