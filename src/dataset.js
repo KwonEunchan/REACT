@@ -54,9 +54,45 @@ const elementInfo = [{
     price: 8000 
   },
 
+  {
+    code: 7,
+    name: '옥화자연휴양림',
+    addr: '충북 청주시 상당구 미원면 운암옥화길 140',
+    call: null,
+    price: 0 
+  },
 
+  {
+    code: 8,
+    name: '경복궁',
+    addr: '서울 종로구 사직로 161 경복궁',
+    call: '02-3700-3900',
+    price: 3000 
+  },
 
+  {
+    code: 9,
+    name: '불국사',
+    addr: '경북 경주시 불국로 385 불국사',
+    call: '054-746-9913',
+    price: 6000 
+  },
 
+  {
+    code: 10,
+    name: '마부농원',
+    addr: '충북 청주시 서원구 남이면 대림로 390-41',
+    call: null,
+    price: 10000 
+  },
+
+  {
+    code: 11,
+    name: '창덕궁',
+    addr: '서울 종로구 율곡로 99',
+    call: '02-3668-2300',
+    price: 3000 
+  }
 
 ]
 
