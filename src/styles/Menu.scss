@@ -1,0 +1,18 @@
+div.menu{
+  height: 70px;
+
+  div.menu-wrapper{
+    width: 960px;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    div{
+      width: 320px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

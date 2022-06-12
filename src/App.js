@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Home from './pages/Home';
+import Menu from './components/Menu';
+import Nav from './components/Nav';
+import Mypage from './pages/Mypage';
+import Cart from './pages/Cart';
+import Tour from './pages/Tour';
+import { useDispatch, useSelector } from "react-redux"
+import { Routes, Route, Link } from 'react-router-dom'
+import Ticket from './pages/Ticket';
 
 function App() {
+  let cart = useSelector((state) => state.cart);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav></Nav>
+      <Menu></Menu>
+      <Routes>
+        <Route path='/' element={ <Home></Home> }></Route>
+        <Route path='/tour' element={ <Tour></Tour> }></Route>
+        <Route path='/mypage' element={ <Mypage></Mypage> }></Route>
+        <Route path='/cart' element={ <Cart></Cart> }></Route>
+        <Route path='/ticket' element={ <Ticket></Ticket> }></Route>
+      </Routes>
     </div>
   );
 }

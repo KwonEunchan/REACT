@@ -1,0 +1,68 @@
+div.pointEl{
+  width: 350px;
+  height: 250px;
+  &:hover img.pointImg{
+    opacity: 1;
+  }
+  img.pointImg{
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 5%;
+    opacity: .7;
+  }
+
+  div.pointText{
+    display: flex;
+    justify-content: space-between;
+
+    div.pointInfo{
+      h2{
+        font-weight: 500;
+      }
+
+      h5{
+        font-weight: 300;
+      }
+    }
+
+    div.pointEvent{
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .btn{
+        width: 70px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 11px;
+        cursor: pointer;
+      
+        &:hover{
+          font-weight: 500;
+        }
+      }
+
+      .about{
+        background-color: #545454;
+        color: white;
+
+        &:hover{
+          opacity: .8;
+        }
+      }
+
+      .pick{
+        background-color: #F35432;
+        color: white;
+
+        &:hover{
+          opacity: .8;
+        }
+      }
+    }
+  }
+}

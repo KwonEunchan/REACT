@@ -1,0 +1,103 @@
+div.cart{
+  h1{
+    font-weight: 400;
+    margin-left: 100px;
+  }
+}
+
+div.cartArea{
+  width: 700px;
+  margin: 50px auto auto;
+  display: flex;
+  align-items: center;
+
+  span.material-symbols-outlined{
+    font-weight: 700;
+    display: block;
+    &:hover{
+      color:#F35432;
+      cursor: pointer;
+    }
+  }
+}
+
+div.cart-Wrapper{
+  width: 370px;
+  height: 300px;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  
+  div.cart-Viewer{
+    width: 700px;
+    height: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    position: absolute;
+    left: 0px;
+    transition: .5s;
+  }
+}
+
+div.btnBox{
+  display: flex;
+  width: 400px; 
+  margin: 0 auto;
+  }
+
+  .btnPay{
+    background-color: #F35432;
+    color: white;
+  }
+  .btnClear{
+    background-color: #f4f4f4;
+  }
+
+
+.btn{
+  cursor: pointer;
+  display: block;
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  &:hover{
+    opacity: .8;
+  }
+}
+
+div.cartEmpty{
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: center;
+  width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  h1{
+    height: 70px;
+    }
+}
+.btn{
+  cursor: pointer;
+  display: block;
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  &:hover{
+    opacity: .8;
+  }
+}
+.btnLink{
+  background-color: #F35432;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+}
+
